@@ -34,7 +34,8 @@ class ViewController: UIViewController {
         randDiceIdx2 = Int.random(in: 0 ... 5)
         diceImageView1.image = UIImage(named: diceArr[randDiceIdx1])
         diceImageView2.image = UIImage(named: diceArr[randDiceIdx2])
-        UIVibrancyEffect()
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
     }
     
 }
